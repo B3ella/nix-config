@@ -55,8 +55,12 @@
   services.xserver.enable = true;
 
   #desktop enviroment
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  #services.displayManager.sddm.enable = true;
+  #services.desktopManager.plasma6.enable = true;
+  programs.hyprland.enable = true;
+  
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -118,6 +122,16 @@
     git
     neofetch
     pkgs.home-manager
+    pkgs.waybar
+    kitty
+    pkgs.dunst
+    libnotify
+    swww
+    rofi-wayland
+    (pkgs.waybar.overrideAttrs (oldAttrs: {
+        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
+      })
+    )
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

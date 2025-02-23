@@ -8,7 +8,8 @@
       sudo nvim .
     '')
     (pkgs.writeShellScriptBin "nrb" ''
-      sudo nixos-rebuild boot
+      sudo nixos-rebuild switch
+      reboot
     '')
     (pkgs.writeShellScriptBin "nrs" ''
       sudo nixos-rebuild switch
