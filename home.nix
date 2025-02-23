@@ -7,6 +7,12 @@
       cd /etc/nixos
       sudo nvim .
     '')
+    (pkgs.writeShellScriptBin "nrb" ''
+      sudo nixos-rebuild boot
+    '')
+    (pkgs.writeShellScriptBin "nrs" ''
+      sudo nixos-rebuild switch
+    '')
   ];
   home.file = {};
   home.sessionVariables = {
