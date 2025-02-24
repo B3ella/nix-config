@@ -7,6 +7,10 @@
       cd /etc/nixos
       sudo nvim .
     '')
+    (pkgs.writeShellScriptBin "edithypr" ''
+      cd ~/.config/hypr
+      nvim .
+    '')
     (pkgs.writeShellScriptBin "nrb" ''
       sudo nixos-rebuild switch
       reboot
