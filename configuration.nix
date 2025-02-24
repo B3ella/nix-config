@@ -129,7 +129,6 @@
     swww
     rofi-wayland
     cmatrix
-    manix
     (pkgs.waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       })
