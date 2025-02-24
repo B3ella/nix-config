@@ -29,6 +29,7 @@
     userName = "b3ella";
     userEmail = "isabellaoliveiradev@gmail.com";
   };
+
   # don't change
   programs.home-manager.enable = true;
   home.stateVersion = "24.11";

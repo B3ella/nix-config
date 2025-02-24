@@ -129,6 +129,7 @@
     swww
     rofi-wayland
     cmatrix
+    networkmanager
     (pkgs.waybar.overrideAttrs (oldAttrs: {
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       })
