@@ -134,6 +134,7 @@
         mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
       })
     )
+    upower
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

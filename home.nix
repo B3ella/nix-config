@@ -30,6 +30,12 @@
     userEmail = "isabellaoliveiradev@gmail.com";
   };
 
+  wayland.windowManager.hyprland = { 
+    enable = true;
+    settings = {
+      "$mainMod" = "ALT";
+    };
+  };
   # don't change
   programs.home-manager.enable = true;
   home.stateVersion = "24.11";
