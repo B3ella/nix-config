@@ -29,6 +29,8 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  nix.autoOptimiseStore = false;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -55,9 +57,9 @@
   services.xserver.enable = true;
 
   #desktop enviroment
-  #services.displayManager.sddm.enable = true;
-  #services.desktopManager.plasma6.enable = true;
-  programs.hyprland.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  #programs.hyprland.enable = true;
   
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
@@ -121,19 +123,14 @@
     tmux
     git
     neofetch
-    pkgs.home-manager
-    pkgs.waybar
     kitty
-    pkgs.dunst
     libnotify
     swww
-    rofi-wayland
     cmatrix
     networkmanager
-    (pkgs.waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      })
-    )
+    qbittorrent
+    home-manager
+    vlc 
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
