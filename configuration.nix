@@ -52,11 +52,33 @@
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
+
+    desktopManager = {
+      xterm.enable = false;
+    };
+   
+    displayManager = {
+      defaultSession = "none+i3";
+    };
+    windowManager.i3.enable = true;
+  };
+
+  services.libinput.touchpad = {
+    disableWhileTyping = true;
+  };
+
+  environment.variables = rec {
+    XDG_CACHE_HOME  = "$HOME/.cache";
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME   = "$HOME/.local/share";
+    XDG_STATE_HOME  = "$HOME/.local/state";
+  };
 
   #desktop enviroment
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  #services.displayManager.sddm.enable = true;
+  #services.desktopManager.plasma6.enable = true;
   #programs.hyprland.enable = true;
   
   xdg.portal.enable = true;
@@ -121,14 +143,36 @@
     tmux
     git
     neofetch
-    kitty
-    libnotify
-    swww
     cmatrix
     networkmanager
+    networkmanagerapplet
     qbittorrent
     home-manager
     vlc 
+    waybar #bar for hyprland
+    mako #notification daemon
+    libnotify #mako depends on it
+    swww #wallpaper daemon
+    kitty #default wayland terminal
+    nautilus #gnome file manager
+    rofi-wayland #app-land
+    cava
+    feh
+    pavucontrol
+    unzip
+    scrot
+    krita
+    gimp
+    python314
+    ly
+    lynx
+  ];
+  services.blueman.enable = true;
+
+  fonts.packages = with pkgs; [
+    liberation_ttf
+    proggyfonts
+    inter
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
