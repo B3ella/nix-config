@@ -1,6 +1,14 @@
 {
   "nodes": {
     "home-manager": {
+      "locked": {
+        "lastModified": 1648751066,
+        "narHash": "sha256-pYUSID9rSgYnl4PNa45/haCaHUKzY+Ul0fkqqSGflxs=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "cf62e96bf7c72e6a88e0bd43165110f42e44cdb4",
+        "type": "github"
+      },
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
