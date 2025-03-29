@@ -150,7 +150,6 @@
     qbittorrent
     home-manager
     vlc 
-    waybar #bar for hyprland
     mako #notification daemon
     libnotify #mako depends on it
     swww #wallpaper daemon
@@ -171,6 +170,10 @@
     poetry
     rustc
     cargo
+    gcc
+    pkg-config
+    pkgs.alsa-lib
+    pkgs.pkg-config
   ];
   services.blueman.enable = true;
 
