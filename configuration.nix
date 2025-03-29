@@ -174,6 +174,7 @@
     pkg-config
     pkgs.alsa-lib
     pkgs.pkg-config
+    sutils
   ];
   services.blueman.enable = true;
 
