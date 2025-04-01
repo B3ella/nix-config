@@ -152,8 +152,6 @@
     vlc 
     mako #notification daemon
     libnotify #mako depends on it
-    swww #wallpaper daemon
-    kitty #default wayland terminal
     alacritty
     nautilus #gnome file manager
     rofi-wayland #app-land
