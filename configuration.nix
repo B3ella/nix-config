@@ -174,6 +174,7 @@
     pkgs.alsa-lib
     pkgs.pkg-config
     sutils
+    trash-cli
   ];
   services.blueman.enable = true;
 
