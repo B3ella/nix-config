@@ -175,6 +175,7 @@
     pkgs.pkg-config
     sutils
     trash-cli
+    nodejs_23
   ];
   services.blueman.enable = true;
 
