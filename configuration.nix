@@ -17,6 +17,15 @@
     "initcall_blacklist=simpledrm_platform_driver_init"
   ];
 
+  programs.obs-studio = {
+    enable = true;
+    plugins = with pkgs.obs-studio-plugins; [
+      wlrobs
+      obs-backgroundremoval
+      obs-pipewire-audio-capture
+    ];
+  };
+
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -176,6 +185,8 @@
     sutils
     trash-cli
     nodejs_23
+    hyfetch
+    ghfetch
   ];
   services.blueman.enable = true;
 
