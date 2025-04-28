@@ -189,6 +189,7 @@
     nodejs_23
     hyfetch
     ghfetch
+    ghostty
   ];
   services.blueman.enable = true;
 
