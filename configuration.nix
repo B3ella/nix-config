@@ -190,6 +190,8 @@
     hyfetch
     ghfetch
     ghostty
+    zoxide
+    opera
   ];
   services.blueman.enable = true;
 
