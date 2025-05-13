@@ -192,6 +192,7 @@
     ghostty
     zoxide
     opera
+    arandr
   ];
   services.blueman.enable = true;
 
