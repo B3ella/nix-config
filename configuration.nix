@@ -193,6 +193,7 @@
     zoxide
     opera
     arandr
+    pandoc
   ];
   services.blueman.enable = true;
 
