@@ -176,7 +176,6 @@
     python314
     ly
     lynx
-    mysql84
     poetry
     rustc
     cargo
@@ -202,10 +201,6 @@
     proggyfonts
     inter
   ];
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
