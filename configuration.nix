@@ -193,6 +193,9 @@
     opera
     arandr
     md2pdf
+    qutebrowser
+    libsForQt5.kdenlive
+    ffmpeg
   ];
   services.blueman.enable = true;
 
