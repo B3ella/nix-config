@@ -196,6 +196,7 @@
     qutebrowser
     libsForQt5.kdenlive
     ffmpeg
+    dysk
   ];
   services.blueman.enable = true;
 
