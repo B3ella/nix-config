@@ -197,6 +197,7 @@
     libsForQt5.kdenlive
     ffmpeg
     dysk
+    calibre
   ];
   services.blueman.enable = true;
 
