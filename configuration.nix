@@ -198,8 +198,15 @@
     ffmpeg
     dysk
     calibre
+    brmodelo
+    mysql-workbench
   ];
   services.blueman.enable = true;
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
+
 
   fonts.packages = with pkgs; [
     liberation_ttf
