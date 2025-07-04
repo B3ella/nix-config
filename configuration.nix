@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -16,6 +16,40 @@
   boot.kernelParams = [
     "initcall_blacklist=simpledrm_platform_driver_init"
   ];
+  boot.kernelModules = [ "uinput" ];
+  hardware.uinput.enable = true;
+  services.udev.extraRules = ''
+    KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+  '';
+  users.groups.uinput = { };
+  systemd.services.kanata-internalKeyboard.serviceConfig = {
+    SupplementaryGroups = [
+      "input"
+      "uinput"
+    ];
+  };
+
+  services.kanata = {
+    package = pkgs.kanata-with-cmd;
+    enable = true;
+    keyboards = {
+      internalKeyboard = {
+        extraDefCfg = "process-unmapped-keys yes";
+        config = ''
+          (defsrc
+           caps
+          )
+          (defalias
+            escctrl (tap-hold 200 200 esc lctrl)
+          )
+          (deflayer base
+            @escctrl
+          )
+        '';
+      };
+    };
+  };
+
 
   programs.obs-studio = {
     enable = true;
