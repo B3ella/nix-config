@@ -24,7 +24,7 @@
           (defsrc
            caps
            a s d f
-           j k l
+           j k l spc
           )
           (defvar
             hold-time 200
@@ -36,18 +36,21 @@
             a-mod (tap-hold $hold-time $tap-time a lmet)
             s-mod (tap-hold $hold-time $tap-time s lsft)
             d-mod (tap-hold $hold-time $tap-time d lctl)
-            f-mod (tap-hold $hold-time $tap-time f (multi (layer-while-held navagation) lalt))
-
-            j-mod (tap-hold $hold-time $tap-time j (multi (layer-while-held navagation) lalt))
+            f-mod (tap-hold $hold-time $tap-time f lalt)
+            j-mod (tap-hold $hold-time $tap-time j lalt)
             k-mod (tap-hold $hold-time $tap-time k lctl)
             l-mod (tap-hold $hold-time $tap-time l rsft)
+            spc-mod (tap-hold $hold-time $tap-time spc 
+              (layer-while-held navagation)
+            )
           )
           (deflayer base
             @escctrl
 
             @a-mod @s-mod @d-mod @f-mod
-            @j-mod @k-mod @l-mod
+            @j-mod @k-mod @l-mod @spc-mod
           )
+
           (deflayermap navagation
             caps tab a 1 s 2 d 3 f 4
             tab 5 q 6 w 7 e 8 r 9
