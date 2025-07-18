@@ -202,6 +202,7 @@
     calibre
     brmodelo
     mysql-workbench
+    syncthing
   ];
   services.blueman.enable = true;
   services.mysql = {
