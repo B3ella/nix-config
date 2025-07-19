@@ -52,10 +52,9 @@
           )
 
           (deflayermap navagation
-            caps tab a 1 s 2 d 3 f 4
+            caps 0 a 1 s 2 d 3 f 4
             tab 5 q 6 w 7 e 8 r 9
             h left j down k up l right
-            c q
           )
         '';
       };
