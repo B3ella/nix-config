@@ -187,12 +187,11 @@
     pkgs.pkg-config
     sutils
     trash-cli
-    nodejs_23
+    nodejs_24
     hyfetch
     ghfetch
     ghostty
     zoxide
-    opera
     arandr
     md2pdf
     qutebrowser
