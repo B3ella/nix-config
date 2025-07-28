@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./modules/kanata.nix
       ./modules/syncthing.nix
+      ./modules/i3.nix
     ];
 
   # Bootloader.
@@ -60,22 +61,6 @@
     LC_PAPER = "pt_BR.UTF-8";
     LC_TELEPHONE = "pt_BR.UTF-8";
     LC_TIME = "pt_BR.UTF-8";
-  };
-
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-
-  services.xserver = {
-    enable = true;
-
-    desktopManager = {
-      xterm.enable = false;
-    };
-   
-    displayManager = {
-      defaultSession = "none+i3";
-    };
-    windowManager.i3.enable = true;
   };
 
   services.libinput.touchpad = {
