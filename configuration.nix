@@ -203,6 +203,7 @@
     brmodelo
     mysql-workbench
     syncthing
+    keepassxc
   ];
   services.blueman.enable = true;
   services.mysql = {
