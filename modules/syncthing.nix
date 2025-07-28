@@ -23,6 +23,10 @@
           path = "/home/bella/Password";
           devices = ["celular"];
         };
+        "Photos" = {
+          path = "/home/bella/Photos";
+          devices = ["celular"];
+        };
       };
     };
   };
