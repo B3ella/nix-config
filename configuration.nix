@@ -166,6 +166,7 @@
     syncthing
     keepassxc
     rdfind
+    nomacs-qt6
   ];
   services.blueman.enable = true;
   services.mysql = {

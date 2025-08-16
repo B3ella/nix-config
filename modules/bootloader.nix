@@ -12,6 +12,7 @@
     device = "nodev";
     efiSupport = true;
     useOSProber = true;
-    theme = "/etc/nixos/grub-themes/lain";
+    splashImage = ../public/bg1.png;
+    backgroundColor = "#000000";
  };
 }
