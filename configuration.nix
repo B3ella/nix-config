@@ -165,6 +165,7 @@
     mysql-workbench
     syncthing
     keepassxc
+    rdfind
   ];
   services.blueman.enable = true;
   services.mysql = {
