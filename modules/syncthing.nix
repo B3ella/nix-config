@@ -16,7 +16,7 @@
       };
       folders = {
         "Notes" = {
-          path = "/home/bella/General";
+          path = "/home/bella/Notes";
           devices = ["celular"];
         };
         "Passwords" = {
@@ -25,6 +25,14 @@
         };
         "Photos" = {
           path = "/home/bella/Photos";
+          devices = ["celular"];
+        };
+        "Books" = {
+          path = "/home/bella/Media/books";
+          devices = ["celular"];
+        };
+        "Documents" = {
+          path = "/home/bella/Documents";
           devices = ["celular"];
         };
       };
