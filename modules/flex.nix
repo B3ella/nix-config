@@ -6,5 +6,5 @@
     cava
     hyfetch
     ghfetch
-  ]
+  ];
 }

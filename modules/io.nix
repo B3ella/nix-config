@@ -6,5 +6,5 @@
     ffmpeg
     arandr
     scrot
-  ]
+  ];
 }

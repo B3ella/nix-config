@@ -7,5 +7,5 @@
     cargo
     gcc
     nodejs_24
-  ]
+  ];
 }
