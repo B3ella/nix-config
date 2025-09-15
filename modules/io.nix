@@ -1,11 +1,10 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    git
-    poetry
-    rustc
-    cargo
-    gcc
-    nodejs_24
+    feh
+    pkgs.alsa-lib
+    ffmpeg
+    arandr
+    scrot
   ]
 }

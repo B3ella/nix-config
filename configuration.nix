@@ -12,6 +12,9 @@
       ./modules/i3.nix
       ./modules/bootloader.nix
       ./modules/locale.nix
+      ./modules/flex.nix
+      ./modules/dev.nix
+      ./modules/io.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -87,81 +90,35 @@
     shell = pkgs.zsh;
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
-  # Allow unfree packages
+    # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim
     obsidian
+    neovim
     tmux
-    git
-    neofetch
-    cmatrix
     networkmanager
     networkmanagerapplet
-    qbittorrent
     home-manager
-    vlc 
-    mako #notification daemon
-    libnotify #mako depends on it
-    alacritty
-    nautilus #gnome file manager
-    rofi-wayland #app-land
-    cava
-    feh
-    pavucontrol
     unzip
-    scrot
-    krita
-    gimp
-    python314
-    ly
     lynx
-    poetry
-    rustc
-    cargo
-    gcc
     pkg-config
-    pkgs.alsa-lib
     pkgs.pkg-config
     sutils
     trash-cli
-    nodejs_24
-    hyfetch
-    ghfetch
-    ghostty
-    zoxide
-    arandr
     md2pdf
-    qutebrowser
-    libsForQt5.kdenlive
-    ffmpeg
     dysk
-    calibre
-    brmodelo
-    mysql-workbench
     syncthing
     keepassxc
-    rdfind
-    nomacs-qt6
+    gh
+    qutebrowser
+    alacritty
+    rofi
   ];
   services.blueman.enable = true;
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-  };
 
-
-  fonts.packages = with pkgs; [
-    liberation_ttf
-    proggyfonts
-    inter
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
