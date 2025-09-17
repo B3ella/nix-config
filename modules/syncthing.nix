@@ -16,8 +16,15 @@
         "Desktop" = {
           id = "QBUG4QF-7XYOLYJ-KVHWGNO-2XMWHG3-CMESV42-P5DOVCZ-XRMUL2A-ARFYHQA";
         };
+        "jesss" = {
+          id = "4MIHKO7-Y523DDK-QBEEEKM-QOQHL6T-WZHVPGF-SODFWQK-MRQEHND-PF7FBQ4";
+        };
       };
       folders = {
+        "telepatia" = {
+          path = "/home/bella/telepatia";
+          devices = ["jesss" "celular" "Desktop"];
+        };
         "Notes" = {
           path = "/home/bella/Notes";
           devices = ["celular" "Desktop"];
