@@ -10,6 +10,7 @@
       ./modules/kanata.nix
       ./modules/syncthing.nix
       ./modules/server.nix
+      ./modules/services.nix
       ./modules/i3.nix
       ./modules/bootloader.nix
       ./modules/locale.nix
