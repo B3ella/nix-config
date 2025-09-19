@@ -9,6 +9,7 @@
       ./hardware-configuration.nix
       ./modules/kanata.nix
       ./modules/syncthing.nix
+      ./modules/server.nix
       ./modules/i3.nix
       ./modules/bootloader.nix
       ./modules/locale.nix
