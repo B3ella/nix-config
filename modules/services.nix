@@ -21,8 +21,8 @@
   systemd.timers."ci" = {
     wantedBy = [ "timers.target" ];
     timerConfig = {
-      OnBootSec = "5m";
-      OnUnitActiveSec = "5m";
+      OnBootSec = "1m";
+      OnUnitActiveSec = "1m";
       Unit = "ci.service";
     };
   };
@@ -30,13 +30,15 @@
   systemd.services."ci" = {
     script = ''
       cd /etc/nixos
-      git pull
-      nixos-generate-config
-      nixos-rebuild switch
+      ${pkgs.git}/bin/git stash
+      ${pkgs.git}/bin/git pull
+      ${pkgs.git}/bin/git stash pop
+      /run/current-system/sw/bin/nixos-generate-config
+      /run/current-system/sw/bin/nixos-rebuild switch
     '';
     serviceConfig = {
       Type = "oneshot";
-      User = "bella";
+      User = "root";
       RemainAfterExit = true;
     };
   };
