@@ -118,7 +118,6 @@
     qutebrowser
     alacritty
     rofi
-    htop
   ];
   services.blueman.enable = true;
 
