@@ -7,5 +7,6 @@
     cargo
     gcc
     nodejs_24
+    python314
   ];
 }
