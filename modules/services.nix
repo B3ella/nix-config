@@ -30,9 +30,7 @@
   systemd.services."ci" = {
     script = ''
       cd /etc/nixos
-      ${pkgs.git}/bin/git stash
       ${pkgs.git}/bin/git pull
-      ${pkgs.git}/bin/git stash pop
       /run/current-system/sw/bin/nixos-generate-config
       /run/current-system/sw/bin/nixos-rebuild switch
     '';
