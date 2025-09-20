@@ -119,6 +119,7 @@
     alacritty
     rofi
     htop
+    vlc
   ];
   services.blueman.enable = true;
 
