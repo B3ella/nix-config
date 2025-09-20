@@ -1,4 +1,4 @@
-{...}:
+{pkgs, ...}:
 {
   systemd.timers."dailynote" = {
     wantedBy = [ "timers.target" ];
@@ -40,5 +40,5 @@
       RemainAfterExit = true;
     };
   };
-
+  environment.systemPackages = [ pkgs.git ];
 }
