@@ -21,8 +21,8 @@
   systemd.timers."ci" = {
     wantedBy = [ "timers.target" ];
     timerConfig = {
-      OnBootSec = "1m";
-      OnUnitActiveSec = "1m";
+      OnBootSec = "5m";
+      OnUnitActiveSec = "5m";
       Unit = "ci.service";
     };
   };
