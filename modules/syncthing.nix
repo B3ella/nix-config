@@ -16,6 +16,9 @@
         "Desktop" = {
           id = "QBUG4QF-7XYOLYJ-KVHWGNO-2XMWHG3-CMESV42-P5DOVCZ-XRMUL2A-ARFYHQA";
         };
+        "Notebook" = {
+          id = "FIZLWUW-E3SHM5D-OYUDEW3-BQBJQC3-OHWLFYD-JCFP57Y-VAVSIKS-PYZSMQA";
+        };
         "jesss" = {
           id = "4MIHKO7-Y523DDK-QBEEEKM-QOQHL6T-WZHVPGF-SODFWQK-MRQEHND-PF7FBQ4";
         };
@@ -23,27 +26,27 @@
       folders = {
         "telepatia" = {
           path = "/home/bella/telepatia";
-          devices = ["jesss" "celular" "Desktop"];
+          devices = ["jesss" "celular" "Desktop" "Notebook"];
         };
         "Notes" = {
           path = "/home/bella/Notes";
-          devices = ["celular" "Desktop"];
+          devices = ["celular" "Desktop" "Notebook"];
         };
         "Passwords" = {
           path = "/home/bella/Password";
-          devices = ["celular" "Desktop"];
+          devices = ["celular" "Desktop" "Notebook"];
         };
         "Photos" = {
           path = "/home/bella/Photos";
-          devices = ["celular" "Desktop"];
+          devices = ["celular" "Desktop" "Notebook"];
         };
         "Books" = {
           path = "/home/bella/Media/books";
-          devices = ["celular" "Desktop"];
+          devices = ["celular" "Desktop" "Notebook"];
         };
         "Documents" = {
           path = "/home/bella/Documents";
-          devices = ["celular" "Desktop"];
+          devices = ["celular" "Desktop" "Notebook"];
         };
       };
     };
