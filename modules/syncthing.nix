@@ -26,7 +26,7 @@
       folders = {
         "telepatia" = {
           path = "/home/bella/telepatia";
-          devices = ["jesss" "celular" "Desktop" "Notebook"];
+          devices = ["jesss" "Desktop" "Notebook"];
         };
         "Notes" = {
           path = "/home/bella/Notes";
