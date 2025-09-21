@@ -10,7 +10,7 @@
   
   systemd.services."dailynote" = {
     script = ''
-      daily-note
+      /home/bella/Projects/daily-note/templater
     '';
     serviceConfig = {
       Type = "oneshot";
