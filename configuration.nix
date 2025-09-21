@@ -17,6 +17,7 @@
       ./modules/flex.nix
       ./modules/dev.nix
       ./modules/io.nix
+      ./modules/steam.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
