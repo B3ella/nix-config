@@ -121,7 +121,6 @@
     rofi
     htop
     vlc
-    sonic-pi
   ];
   services.blueman.enable = true;
 
