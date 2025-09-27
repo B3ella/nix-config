@@ -55,6 +55,15 @@
             caps 0 a 1 s 2 d 3 f 4
             tab 5 q 6 w 7 e 8 r 9
             h left j down k up l right
+
+            z IntlRo
+            x Comma
+            c S-Comma
+            v Slash
+
+            Slash S-IntlRo
+            Comma S-Period
+            m S-Slash
           )
         '';
       };
