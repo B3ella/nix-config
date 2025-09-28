@@ -18,6 +18,7 @@
       ./modules/dev.nix
       ./modules/io.nix
       ./modules/steam.nix
+      ./modules/sonicpi.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
