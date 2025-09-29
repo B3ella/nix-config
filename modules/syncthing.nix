@@ -22,11 +22,14 @@
         "jesss" = {
           id = "4MIHKO7-Y523DDK-QBEEEKM-QOQHL6T-WZHVPGF-SODFWQK-MRQEHND-PF7FBQ4";
         };
+        "jesss-desktop" = {
+          id = "RS7QAOS-H43IJPS-HL52MYD-VDBU4QE-Y7W5UZG-67I47OW-BRIBAYB-5J65EA2";
+        };
       };
       folders = {
         "telepatia" = {
           path = "/home/bella/telepatia";
-          devices = ["jesss" "Desktop" "Notebook"];
+          devices = ["jesss" "Desktop" "Notebook" "jesss-desktop"];
         };
         "Notes" = {
           path = "/home/bella/Notes";
