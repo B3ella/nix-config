@@ -28,7 +28,6 @@
   };
   
   systemd.services."ci" = {
-    enable = false;
     script = ''
       cd /etc/nixos
       ${pkgs.git}/bin/git pull
