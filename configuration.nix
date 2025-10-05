@@ -20,6 +20,7 @@
       ./modules/steam.nix
       ./modules/sonicpi.nix
       ./modules/sleep.nix
+      ./modules/eyepatch.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -122,7 +123,6 @@
     alacritty
     rofi
     htop
-    vlc
   ];
   services.blueman.enable = true;
 
