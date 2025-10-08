@@ -9,6 +9,11 @@
     overrideDevices = true;
     overrideFolders = true;
     settings = {
+    listenAddress = [
+      "tcp://0.0.0.0:8080"
+      "quic://0.0.0.0:8080"
+      "dynamic+https://relays.syncthing.net/endpoint"
+    ];
       devices = {
         "celular" = {
           id = "WU4FYL4-BOITC37-F2XJHV5-KHZ6BLV-FPKRI6H-EL2YBZJ-RNTE2TX-JWR6OA5";

@@ -15,7 +15,6 @@
     serviceConfig = {
       Type = "oneshot";
       User = "bella";
-      RemainAfterExit = true;
     };
   };
   systemd.timers."ci" = {
