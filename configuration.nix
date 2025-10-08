@@ -17,6 +17,7 @@
       ./modules/flex.nix
       ./modules/dev.nix
       ./modules/io.nix
+      ./modules/steam.nix
       ./modules/sonicpi.nix
       ./modules/sleep.nix
       ./modules/eyepatch.nix

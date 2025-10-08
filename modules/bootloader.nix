@@ -6,7 +6,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelParams = [
     "initcall_blacklist=simpledrm_platform_driver_init"
-    "console=tty"
   ];
   boot.loader.grub = {
     enable = true;
