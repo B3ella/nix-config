@@ -17,10 +17,10 @@
       ./modules/flex.nix
       ./modules/dev.nix
       ./modules/io.nix
-      ./modules/steam.nix
       ./modules/sonicpi.nix
       ./modules/sleep.nix
       ./modules/eyepatch.nix
+      ./modules/ssh.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -29,6 +29,7 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
 
   nix.settings.auto-optimise-store = false;
   hardware.bluetooth.enable = true;
@@ -88,7 +89,7 @@
   users.users.bella = {
     isNormalUser = true;
     description = "Isabella Oliveira";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
@@ -96,13 +97,14 @@
     shell = pkgs.zsh;
   };
 
-    # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  # Allow unfree packages
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    obsidian
     neovim
     tmux
     networkmanager
@@ -119,10 +121,10 @@
     syncthing
     keepassxc
     gh
-    qutebrowser
     alacritty
     rofi
     htop
+    qutebrowser
   ];
   services.blueman.enable = true;
 
@@ -153,5 +155,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
-
 }
