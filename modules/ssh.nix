@@ -2,12 +2,15 @@
 {
   services.openssh = {
     enable = true;
-    ports = [ 5432 ];
     settings = {
       PasswordAuthentication = false;
-      KbdInteractiveAuthentication = false;
+      KbdInteractiveAuthentication = true;
       PermitRootLogin = "no";
       AllowUsers = [ "bella" ];
     };
+    openFirewall = true;
   };
+  environment.systemPackages = with pkgs; [
+    thc-hydra
+  ];
 }
