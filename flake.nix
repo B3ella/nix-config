@@ -1,7 +1,7 @@
 {
   description = "A very basic flake";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=25.05";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -22,9 +22,8 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit system ; };
       modules = [
-	./configuration.nix
+	      ./configuration.nix
       ];
     };
-
   };
 }
