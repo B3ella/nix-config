@@ -13,6 +13,7 @@
     psmisc
     docker-buildx
     maven
+    unixtools.arp
   ];
   services.mysql = {
     enable = true;

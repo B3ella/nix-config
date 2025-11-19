@@ -10,8 +10,8 @@
     overrideFolders = true;
     settings = {
     listenAddress = [
-      "tcp://0.0.0.0:8080"
-      "quic://0.0.0.0:8080"
+      "tcp://0.0.0.0:2004"
+      "quic://0.0.0.0:2004"
       "dynamic+https://relays.syncthing.net/endpoint"
     ];
       devices = {

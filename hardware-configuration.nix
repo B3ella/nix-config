@@ -24,7 +24,7 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/var/lib/docker/overlay2/168c1f605308d0406589b84e265f424fe9a81eea2fdc497d40d18f48c32a2a84/merged" =
+  fileSystems."/var/lib/docker/overlay2/3639c6f0ef36189aa6100e1b20a1d587ae5d7f140559411473555109ab64b6fe/merged" =
     { device = "overlay";
       fsType = "overlay";
     };
@@ -36,10 +36,10 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.br-636fcaa0d528.useDHCP = lib.mkDefault true;
+  # networking.interfaces.br-0c4a68e17b49.useDHCP = lib.mkDefault true;
   # networking.interfaces.docker0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp2s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.veth68789b0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.veth3cdf2da.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp1s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

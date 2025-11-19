@@ -125,6 +125,8 @@
     rofi
     htop
     qutebrowser
+    librewolf
+    obsidian
   ];
   services.blueman.enable = true;
 
