@@ -16,11 +16,11 @@
     unixtools.arp
   ];
   services.mysql = {
-    enable = true;
+    enable = false;
     package = pkgs.mariadb;
   };
   virtualisation.docker = {
-    enable = true;
+    enable = false;
     daemon.settings = {
       data-root = "var/lib/docker";
       live-restore = true;
