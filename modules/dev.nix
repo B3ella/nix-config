@@ -9,21 +9,19 @@
     nodejs_24
     python314
     zulu24
-    docker
     psmisc
-    docker-buildx
     maven
     unixtools.arp
   ];
-  services.mysql = {
-    enable = false;
-    package = pkgs.mariadb;
-  };
-  virtualisation.docker = {
-    enable = false;
-    daemon.settings = {
-      data-root = "var/lib/docker";
-      live-restore = true;
-    };
-  };
+  #services.mysql = {
+  #  enable = false;
+  #  package = pkgs.mariadb;
+  #};
+  #virtualisation.docker = {
+  #  enable = false;
+  #  daemon.settings = {
+  #    data-root = "var/lib/docker";
+  #    live-restore = true;
+  #  };
+  #};
 }

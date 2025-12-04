@@ -89,7 +89,7 @@
   users.users.bella = {
     isNormalUser = true;
     description = "Isabella Oliveira";
-    extraGroups = [ "networkmanager" "wheel" "docker"];
+    extraGroups = [ "networkmanager" "wheel"];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
