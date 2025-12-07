@@ -8,6 +8,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/kanata.nix
+      ./modules/secure-boot.nix
       ./modules/syncthing.nix
       ./modules/server.nix
       ./modules/services.nix
