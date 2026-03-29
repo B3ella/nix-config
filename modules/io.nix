@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     feh
-    pkgs.alsa-lib
+    alsa-lib
     pavucontrol
     ffmpeg
     arandr

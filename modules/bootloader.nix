@@ -8,7 +8,7 @@
     "initcall_blacklist=simpledrm_platform_driver_init"
   ];
   boot.loader.grub = {
-    enable = false;
+    enable = true;
     device = "nodev";
     efiSupport = true;
     useOSProber = true;
@@ -16,8 +16,4 @@
     backgroundColor = "#000000";
  };
   boot.loader.systemd-boot.enable = lib.mkForce false;
-  boot.lanzaboote = {
-    enable = true;
-    pkiBundle = "/var/lib/sbctl";
-  };
 }

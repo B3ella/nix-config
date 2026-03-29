@@ -8,9 +8,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./modules/kanata.nix
-      ./modules/secure-boot.nix
       ./modules/syncthing.nix
-      ./modules/server.nix
       ./modules/services.nix
       ./modules/i3.nix
       ./modules/bootloader.nix
@@ -18,10 +16,7 @@
       ./modules/flex.nix
       ./modules/dev.nix
       ./modules/io.nix
-      ./modules/sonicpi.nix
-      ./modules/sleep.nix
       ./modules/eyepatch.nix
-      ./modules/ssh.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -30,7 +25,6 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
 
   nix.settings.auto-optimise-store = false;
   hardware.bluetooth.enable = true;
@@ -127,7 +121,13 @@
     htop
     qutebrowser
     librewolf
-    obsidian
+    kdePackages.okular
+    anki
+    brmodelo
+    mars-mips
+    unixtools.netstat
+    firefox
+    youtube-dl
   ];
   services.blueman.enable = true;
 

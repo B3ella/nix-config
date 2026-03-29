@@ -1,0 +1,10 @@
+<user-mapping>
+    <authorize username="bella" password="e4ad93ca07acb8d908a3aa41e920ea4f4ef4f26e7f86cf8291c5db289780a5ae" encoding="sha256">
+      <connection name="TV">
+          <protocol>rdp</protocol>
+          <param name="hostname">127.0.0.1</param>
+          <param name="port">3389</param>
+          <param name="ignore-cert">true</param>
+      </connection>
+    </authorize>
+</user-mapping>

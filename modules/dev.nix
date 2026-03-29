@@ -8,7 +8,6 @@
     gcc
     nodejs_24
     python314
-    zulu24
     psmisc
     maven
     unixtools.arp

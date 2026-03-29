@@ -4,5 +4,6 @@
     vlc
     qbittorrent
     calibre
+    gabutdm
   ];
 }

@@ -18,6 +18,7 @@
     };
   };
   systemd.timers."ci" = {
+    enable = false;
     wantedBy = [ "timers.target" ];
     timerConfig = {
       OnBootSec = "5m";
