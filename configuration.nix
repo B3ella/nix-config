@@ -96,7 +96,7 @@
     mars-mips
     unixtools.netstat
     firefox
-    youtube-dl
+    acpi
   ];
   services.blueman.enable = true;
 
