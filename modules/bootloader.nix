@@ -15,5 +15,4 @@
     splashImage = ../public/bg1.png;
     backgroundColor = "#000000";
  };
-  boot.loader.systemd-boot.enable = lib.mkForce false;
 }
