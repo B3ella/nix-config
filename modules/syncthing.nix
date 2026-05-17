@@ -11,8 +11,12 @@
     settings = {
       devices = {
         "celular" = {
+          id = "OR66BSD-LD7WXZV-RUT5OR4-3CP7E7O-JBS2MMB-T2XFJSQ-A5YBBAC-BZNVDAY";
+        };
+        "celular-antigo" = {
           id = "WU4FYL4-BOITC37-F2XJHV5-KHZ6BLV-FPKRI6H-EL2YBZJ-RNTE2TX-JWR6OA5";
         };
+
         "Desktop" = {
           id = "QBUG4QF-7XYOLYJ-KVHWGNO-2XMWHG3-CMESV42-P5DOVCZ-XRMUL2A-ARFYHQA";
         };
