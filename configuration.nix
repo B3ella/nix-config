@@ -97,6 +97,7 @@
     unixtools.netstat
     firefox
     acpi
+    nchat
   ];
   services.blueman.enable = true;
 
