@@ -11,6 +11,7 @@
     psmisc
     maven
     unixtools.arp
+    cmake
   ];
   #services.mysql = {
   #  enable = false;
