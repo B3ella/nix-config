@@ -14,6 +14,7 @@
       ./modules/io.nix
       ./modules/eyepatch.nix
       ./modules/docker.nix
+      ./modules/shell.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
