@@ -98,11 +98,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1780154495,
-        "narHash": "sha256-IFJSCoIHwPLLj3OcqDXtA2q3bAImJeDs2/9uQqSGS9U=",
+        "lastModified": 1780156051,
+        "narHash": "sha256-xFD3W9U5is9hZHbfxwYfauhCAGp1WBCS/+XivLbQJnA=",
         "owner": "B3ella",
         "repo": "groundhog",
-        "rev": "436a89ff77063a541d83aeaeed2f09eb094776d9",
+        "rev": "4a0d8fd01a1b23e267ab792a64690912c767225d",
         "type": "github"
       },
       "original": {

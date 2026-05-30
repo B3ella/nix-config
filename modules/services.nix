@@ -10,7 +10,7 @@
   
   systemd.services."dailynote" = {
     script = ''
-      templater
+      groundhog
     '';
     serviceConfig = {
       Type = "oneshot";
