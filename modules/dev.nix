@@ -5,6 +5,7 @@
     poetry
     rustc
     cargo
+    clippy
     gcc
     nodejs_24
     python314
