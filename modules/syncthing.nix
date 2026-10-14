@@ -29,11 +29,14 @@
         "jesss-desktop" = {
           id = "RS7QAOS-H43IJPS-HL52MYD-VDBU4QE-Y7W5UZG-67I47OW-BRIBAYB-5J65EA2";
         };
+        "dell-macna" = {
+          id = "E32X3BD-CEVBMHJ-HGBVMZQ-S5BWIVT-6IWJ5QZ-EVIOLUO-5KG6GEM-FTJ7YAT";
+        };
       };
       folders = {
         "telepatia" = {
           path = "/home/bella/telepatia";
-          devices = ["jesss" "Desktop" "Notebook" "jesss-desktop"];
+          devices = ["jesss" "Desktop" "Notebook" "jesss-desktop" "dell-macna"];
         };
         "Notes" = {
           path = "/home/bella/Notes";
