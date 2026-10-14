@@ -1,4 +1,4 @@
-{ pkgs, libs, ... }:
+{ pkgs, ... }:
 
 {
   programs.neovim.extraConfig = "hi Normal guibg=NONE";

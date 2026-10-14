@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 {
   boot.kernelModules = [ "uinput" ];
   hardware.uinput.enable = true;

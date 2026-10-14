@@ -1,4 +1,4 @@
-{ config, lib, pkgs, groundhog, ... }:
+{ config, pkgs, groundhog, ... }:
 {
   imports =
     [

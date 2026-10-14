@@ -1,4 +1,4 @@
-{inputs, pkgs, config, ...}:
+{pkgs, config, ...}:
 
 {
   services.picom.enable = true;
