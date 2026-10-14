@@ -7,5 +7,7 @@
     ffmpeg
     arandr
     scrot
+    kdePackages.kdenlive
+    ardour
   ];
 }
