@@ -13,14 +13,14 @@
       set-bg
     '')
     (pkgs.writeShellScriptBin "set-bg" ''
-      feh --bg-scale ~/.config/home-manager/imgs/bg.png
+      feh --bg-scale ~/Photos/bg.png
     '')
     (pkgs.writeShellScriptBin "change-bg-2" ''
       feh --bg-scale ~/Photos/lain_bg_2.jpg
       ~/Photos/lain_bg_2.jpg
     '')
     (pkgs.writeShellScriptBin "change-bg" ''
-      feh --bg-scale ~/.config/home-manager/imgs/about-time.png
+      feh --bg-scale ~/Photos/about-time.png
     '')
     (pkgs.writeShellScriptBin "daily-note" ''
       cd ~/Projects/daily-note
