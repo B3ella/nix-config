@@ -92,7 +92,6 @@
     qutebrowser
     librewolf
     kdePackages.okular
-    anki
     brmodelo
     mars-mips
     unixtools.netstat
