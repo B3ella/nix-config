@@ -27,7 +27,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit system; inherit groundhog; };
       modules = [
-	      ./configuration.nix
+	      ./hosts/nixos
         lanzaboote.nixosModules.lanzaboote
       ];
     };

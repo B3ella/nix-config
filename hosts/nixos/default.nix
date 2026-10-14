@@ -3,18 +3,18 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./modules/kanata.nix
-      ./modules/syncthing.nix
-      ./modules/services.nix
-      ./modules/i3.nix
-      ./modules/bootloader.nix
-      ./modules/locale.nix
-      ./modules/flex.nix
-      ./modules/dev.nix
-      ./modules/io.nix
-      ./modules/eyepatch.nix
-      ./modules/docker.nix
-      ./modules/shell.nix
+      ../../modules/kanata.nix
+      ../../modules/syncthing.nix
+      ../../modules/services.nix
+      ../../modules/i3.nix
+      ../../modules/bootloader.nix
+      ../../modules/locale.nix
+      ../../modules/flex.nix
+      ../../modules/dev.nix
+      ../../modules/io.nix
+      ../../modules/eyepatch.nix
+      ../../modules/docker.nix
+      ../../modules/shell.nix
     ];
 
   networking.hostName = "nixos"; # Define your hostname.
