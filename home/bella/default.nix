@@ -1,26 +1,21 @@
-{ config, nix-colors, pkgs, ... }:
+{ nix-colors, pkgs, nvf, username, ... }:
 
 { 
   imports = [
-    ./modules/i3.nix
-    ./modules/alacritty.nix
-    ./modules/neovim.nix
-    ./modules/zsh.nix
-    ./modules/scripts.nix
-    ./modules/git.nix
-    ./modules/qute.nix
-    ./modules/status.nix
+    ./i3.nix
+    ./alacritty.nix
+    ./neovim.nix
+    ./zsh.nix
+    ./scripts.nix
+    ./git.nix
+    ./qute.nix
+    ./status.nix
     nix-colors.homeManagerModules.default
   ];
   colorScheme = nix-colors.colorSchemes.kanagawa;
 
   programs.nvf.enableManpages = true;
 
-  home.username = "bella";
-  home.homeDirectory = "/home/bella";
-
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
   home.packages = [
     (pkgs.writeShellScriptBin "gotonix" ''
       cd /etc/nixos
