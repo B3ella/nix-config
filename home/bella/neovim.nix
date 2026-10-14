@@ -31,7 +31,6 @@
     languages = {
       rust.enable = true;
       nix.enable = true;
-      ts.enable = true;
       python.enable = true;
       markdown.enable = true;
     };
