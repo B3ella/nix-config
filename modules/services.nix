@@ -1,5 +1,7 @@
-{pkgs, ...}:
-{
+{pkgs, groundhog, ...}:
+let
+  groundhogPkg = groundhog.packages.${pkgs.system}.default;
+in {
   systemd.timers."dailynote" = {
     wantedBy = [ "timers.target" ];
      timerConfig = {
@@ -9,9 +11,7 @@
   };
   
   systemd.services."dailynote" = {
-    script = ''
-      groundhog
-    '';
+    script = "${groundhogPkg}/bin/groundhog";   # absolute path
     serviceConfig = {
       Type = "oneshot";
       User = "bella";
