@@ -54,6 +54,10 @@
           path = "/home/bella/Media/books";
           devices = ["celular" "Desktop" "Notebook"];
         };
+        "Video" = {
+          path = "/home/bella/Media/Video";
+          devices = ["celular" "Desktop" "Notebook"];
+        };
         "Documents" = {
           path = "/home/bella/Documents";
           devices = ["celular" "Desktop" "Notebook"];
