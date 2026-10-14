@@ -61,7 +61,7 @@
   users.users.bella = {
     isNormalUser = true;
     description = "Isabella Oliveira";
-    extraGroups = [ "networkmanager" "wheel"];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     shell = pkgs.zsh;
   };
 
