@@ -65,7 +65,6 @@
     tmux
     networkmanager
     networkmanagerapplet
-    home-manager
     unzip
     lynx
     pkg-config
