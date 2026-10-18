@@ -25,9 +25,6 @@
     telescope.mappings.findFiles = "<leader>pf";
     navigation.harpoon.enable = true;
 
-    lsp = {
-      enable = true;
-    };
     languages = {
       rust.enable = true;
       nix.enable = true;
