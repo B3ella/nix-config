@@ -15,12 +15,16 @@
       ll = "ls -l";
       edit = "sudo -e";
       update = "sudo nixos-rebuild switch";
+      n = "nvim .";
     };
 
     history.size = 10000;
     history.ignoreAllDups = true;
     history.path = "$HOME/.zsh_history";
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
+    setOptions = [
+      "HIST_IGNORE_ALL_DUPS"
+    ];
 
     defaultKeymap = "vicmd";
   };
