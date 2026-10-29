@@ -25,9 +25,22 @@
   in
   {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      inherit system;
+
       specialArgs = { inherit system; inherit groundhog; };
       modules = [
-	      ./hosts/nixos
+        groundhog.nixosModules.default
+
+        ./hosts/nixos
+
+        {
+          services.groundhog = {
+            enable = true;
+            user = username;
+            schedule = "daily";
+          };
+        }
+
         home-manager.nixosModules.home-manager
         {
           nixpkgs.config.allowUnfree = true;
