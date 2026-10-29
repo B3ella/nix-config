@@ -40,8 +40,7 @@
         {
           services.groundhog = {
             enable = true;
-            user = username;
-            schedule = "daily";
+            user = bella;
           };
         }
 
