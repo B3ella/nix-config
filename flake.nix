@@ -40,7 +40,7 @@
         {
           services.groundhog = {
             enable = true;
-            user = bella;
+            user = "bella";
           };
         }
 
