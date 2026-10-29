@@ -1,0 +1,50 @@
+name: Test NixOS Configuration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v23
+
+      - name: Nix flake check
+        run: |
+          nix flake check --all-systems
+
+      # Disabling because it frequently fails on github.
+      # Error message is "error: writing to file: No space left on device"
+      # - name: Build home-manager configuration for srvbox
+      #   run: |
+      #     nix build .#homeConfigurations."justin@srvbox".activationPackage
+
+      # disabled because this takes too long
+      # - name: Build NixOS configuration for framework
+      #   run: |
+      #     nix build .#nixosConfigurations.framework.config.system.build.toplevel
+
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v23
+
+      - name: Check formatting
+        run: |
+          nix develop --command treefmt --ci
