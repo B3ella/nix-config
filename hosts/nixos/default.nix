@@ -1,4 +1,4 @@
-{ config, pkgs, groundhog, ... }:
+{ config, pkgs, ... }:
 {
   imports =
     [
@@ -87,7 +87,6 @@
     firefox
     acpi
     nchat
-    groundhog.packages.${system}.default
   ];
   services.blueman.enable = true;
 
