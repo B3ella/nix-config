@@ -1,17 +1,66 @@
 # Personal NixOS Configuration
 
-This repository contains my personal NixOS and Home Manager configuration. It is built as a Nix flake and manages both the system-level setup for a Linux machine and the user environment for my daily desktop workflow.
+Minha config de nixos
 
-## What is included
+## Instalando 
+Para instalar a config num sistema nixos, instalar e reiniciar rode
 
-- Declarative system configuration via `flake.nix`
-- Home Manager configuration for the `bella` user
-- Custom NixOS modules for peripherals, desktop tools, and services
-- i3-based desktop setup with custom scripts and status widgets
-- Developer environment tooling for Neovim, Git, Zsh, and terminal apps
-- Support for apps such as Alacritty, qutebrowser, Docker, Steam, Syncthing, and Kanata
+```bash
+sudo rm -rf /etc/nixos
+sudo git clone https://github.com/B3ella/nix-config /etc/nixos
+cd /etc/nixos
+sudo nixos-rebuild boot --flake .
+reboot
+```
 
-## Repository layout
+## Workflow
+### Kanata
+Uso kanata pra remapear capslock pra esc, é util pro vim e eu não uso caps
+
+
+O kanata também configura os homerow mods
+```text
+Alt segurando j ou f
+Ctrl segurando k ou d
+Shift segurando s ou l
+E super (windows) segurando a
+```
+Pra resposta normal de segurar (escrever a mesma tecla várias vezes) só aperte a tecla duas vezes rápido (menos de 200 milisegundos) e segura
+
+E tem o que eu chamo de modo de navegação. Segurando a barra de espaço as teclas hjkl viram as setas (movimentação vim) e os números ficam disponíveis pra mão esquerda
+
+```text
+caps = 0
+a = 1
+s = 2
+d = 3
+f = 4
+tab = 5
+q = 6
+w = 7
+e = 8
+r = 9
+```
+Mantendo os números e setas na homerow. especialmente útil pra configuração do i3
+
+### I3
+
+Quando o computador começar o i3 vai rodar 4 programas
+
+Librewolf (browser), okular (pdf reader), alacritty (terminal), e keepass (password manager)
+
+São os programas que eu sempre uso e o atalho pra eles é:
+```text
+alt+0
+alt+1
+alt+2
+alt+3
+```
+respectivamente
+
+As outras janelas são de propósito geral e usam os números de 4 pra cima
+
+## layout
 
 ```text
 .
@@ -49,30 +98,3 @@ This repository contains my personal NixOS and Home Manager configuration. It is
 ├── Readme.md
 └── README.md
 ```
-
-## Usage
-
-This repo is intended for a NixOS machine with flakes enabled.
-
-Clone it into `/etc/nixos` and rebuild:
-
-```bash
-sudo git clone https://github.com/B3ella/nix-config /etc/nixos
-cd /etc/nixos
-sudo nixos-rebuild switch --flake .
-```
-
-To apply the configuration at boot time instead:
-
-```bash
-sudo nixos-rebuild boot --flake .
-reboot
-```
-
-## Notes
-
-This is a personal configuration and may need adjustments to match your own machine, user name, hardware, or preferences. The structure is organized so host-specific settings live under `hosts/`, user configuration under `home/`, and reusable system behavior under `modules/`.
-
-## License
-
-This project does not currently declare a license in the repository metadata.
