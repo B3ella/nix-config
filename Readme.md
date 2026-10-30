@@ -79,6 +79,49 @@ dps que escolher o bg esc volta pro modo normal
 ### Syncthing
 É o programa que sincroniza os dados entre o meu pc e meu celular. Ele não vai conseguir conectar pq vai pedir autorização pra conectar com os dispositivos novos, mas se puder desativar antes de rodar eu agradeço (não quero receber um monte de solicitação)
 
+### Scripts
+Tem alguns scripts configurados pra tarefas que eu sempre uso
+
+```bash
+source gotonix
+```
+abre o diretório da nix-config
+```bash
+editnix
+```
+Abre o diretório da nix-config no neovim
+
+```bash
+n
+```
+Abre o neovim no diretório atual
+
+```bash
+notes
+```
+Assume que você tá usando groundhog pq se você não tá você tá errado.
+
+Abre a nota do dia no vim com ~/Notes como diretório raiz (ent da pra pesquisar pelas outras notas com espaço+pf)
+
+```bash
+nrs
+```
+ecurta sudo nixos-rebuild --switch
+
+```bash
+nrb
+```
+sudo nixos-rebuild --boot seguido de um reboot
+
+```bash
+nsz
+nzs
+```
+Abre a nix-shell do diretório atual com zsh
+
+Os dois fazem a mesma coisa pq o primeiro era abreviação de nix-shell zsh (a sequencia de comandos que eu rodava)
+
+Mas eu sempre tentava escrever nzs pq nix zsh shell soa mais natural ent mudei mas mantive o antigo por retrocompatibilidade
 ## layout
 
 ```text

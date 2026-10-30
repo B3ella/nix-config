@@ -24,13 +24,6 @@
       cd /etc/nixos
       nvim .
     '')
-    (pkgs.writeShellScriptBin "gotohome" ''
-      cd ~/.config/home-manager
-    '')
-    (pkgs.writeShellScriptBin "edithome" ''
-      cd ~/.config/home-manager
-      nvim .
-    '')
     (pkgs.writeShellScriptBin "nrs" ''
       sudo nixos-rebuild switch
     '')
@@ -39,11 +32,10 @@
       sudo nixos-rebuild boot
       reboot
     '')
-    (pkgs.writeShellScriptBin "hms" ''
-      home-manager switch
-      reloadi3
-    '')
     (pkgs.writeShellScriptBin "nsz" ''
+        nix-shell . --command zsh
+    '')
+    (pkgs.writeShellScriptBin "nzs" ''
         nix-shell . --command zsh
     '')
   ];
