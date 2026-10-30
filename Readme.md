@@ -60,6 +60,25 @@ respectivamente
 
 As outras janelas são de propósito geral e usam os números de 4 pra cima
 
+Ah e ele vai procurar uma imagem pra ser o bg em ~/Photos/bg.png ent coloca algo lá
+
+Também tenho 2 background alternativos em
+```bash
+~/Photos/lain_bg_2.jpg
+```
+e
+```bash
+~/Photos/about-time.png
+```
+Mas da pra subistituir elas em home/bella/scripts
+
+Alt b entra no modo de trocar o bg e as setas selecionam cada bg.
+dps que escolher o bg esc volta pro modo normal
+
+
+### Syncthing
+É o programa que sincroniza os dados entre o meu pc e meu celular. Ele não vai conseguir conectar pq vai pedir autorização pra conectar com os dispositivos novos, mas se puder desativar antes de rodar eu agradeço (não quero receber um monte de solicitação)
+
 ## layout
 
 ```text
