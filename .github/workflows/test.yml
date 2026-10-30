@@ -23,7 +23,7 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@v23
 
       - name: check outputs
-        run: nix flake show github:B3ella/groundhog
+        run: nix flake show github:B3ella/groundhog --no-write-lock-file
 
       - name: Nix flake check
         run: |
