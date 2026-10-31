@@ -33,7 +33,7 @@
       };
 
       modules = [
-        groundhog.packages.${system}.default
+        groundhog.nixosModules.default
 
         ./hosts/nixos
 
