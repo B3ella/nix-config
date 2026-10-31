@@ -18,7 +18,7 @@
 
   networking.hostName = "nixos"; # Define your hostname.
 
-  nix.settings.auto-optimise-store = false;
+  nix.settings.auto-optimise-store = true;
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 

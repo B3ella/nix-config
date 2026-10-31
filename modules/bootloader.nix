@@ -11,7 +11,7 @@
     enable = true;
     device = "nodev";
     efiSupport = true;
-    useOSProber = true;
+    useOSProber = false;
     splashImage = ../public/bg1.png;
     backgroundColor = "#000000";
  };
