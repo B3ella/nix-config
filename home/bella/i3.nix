@@ -53,7 +53,7 @@
         "Mod1+Return" = "exec alacritty";
         "Mod1+d" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
         "Mod4" = "exec rofi -show drun -show-icons -font 'Dalfitra Regular 14' -bg '#263014'";
-	      "Mod1+g" = "exec qutebrowser";
+	      "Mod1+g" = "exec librewolf";
 	      "Mod1+s" = "scratchpad show";
         "Mod1+P" = "exec scrot -s /home/bella/Photos/print.png";
 
@@ -123,7 +123,7 @@
         "Mod1+c" = "title_format '%class'";
       };
       assigns = {
-        "web" = [{ class = "^qutebrowser$"; }];
+        "web" = [{ class = "^librewolf$"; }];
         "Books" = [{ class = "^okular$"; }];
         "terminal" = [{ class = "^Alacritty$"; }];
         "passwords" = [{ class = "^KeePassXC$"; }];
@@ -132,7 +132,7 @@
       startup = [
         { command = "home-startup"; }
         { command = "okular"; }
-        { command = "qutebrowser"; }
+        { command = "librewolf"; }
         { command = "alacritty"; }
         { command = "keepassxc"; }
       ];

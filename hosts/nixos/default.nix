@@ -78,13 +78,12 @@
     alacritty
     rofi
     htop
-    qutebrowser
     librewolf
     kdePackages.okular
     brmodelo
     mars-mips
     unixtools.netstat
-    firefox
+    librewolf
     acpi
     nchat
   ];

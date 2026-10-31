@@ -8,7 +8,6 @@
     ./zsh.nix
     ./scripts.nix
     ./git.nix
-    ./qute.nix
     ./status.nix
     nix-colors.homeManagerModules.default
   ];
