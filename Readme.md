@@ -99,7 +99,7 @@ Abre o neovim no diretório atual
 ```bash
 notes
 ```
-Assume que você tá usando groundhog pq se você não tá você tá errado.
+Assume que você tá usando Marmota pq se você não tá você tá errado.
 
 Abre a nota do dia no vim com ~/Notes como diretório raiz (ent da pra pesquisar pelas outras notas com espaço+pf)
 

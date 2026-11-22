@@ -6,7 +6,7 @@
     nvf.url = "github:notashelf/nvf";
     nix-colors.url = "github:misterio77/nix-colors";
 
-    groundhog.url = "github:B3ella/groundhog";
+    marmota.url = "github:B3ella/marmota";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, groundhog, home-manager, nvf, nix-colors, ... }@inputs:
+  outputs = { self, nixpkgs, marmota, home-manager, nvf, nix-colors, ... }@inputs:
   let
     system = "x86_64-linux";
     username = "bella";
@@ -29,16 +29,16 @@
 
       specialArgs = {
         inherit system;
-        inherit groundhog;
+        inherit marmota;
       };
 
       modules = [
-        groundhog.nixosModules.default
+        marmota.nixosModules.default
 
         ./hosts/nixos
 
         {
-          services.groundhog = {
+          services.marmota = {
             enable = true;
             user = "bella";
           };

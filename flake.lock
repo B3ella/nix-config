@@ -50,25 +50,6 @@
         "type": "github"
       }
     },
-    "groundhog": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1793449509,
-        "narHash": "sha256-wG3kjUAjNB+Lj7oAnGfpDphUJUUj4SftCBwGZS7XzHw=",
-        "owner": "B3ella",
-        "repo": "groundhog",
-        "rev": "df004da490a186caa0d626b5288edf4f9442df8c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "B3ella",
-        "repo": "groundhog",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -87,6 +68,25 @@
         "owner": "nix-community",
         "ref": "release-25.11",
         "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "marmota": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1795285300,
+        "narHash": "sha256-gxIY6RgnD9Soncvc/kgBXwNShIs3oscK++UO6la0pF0=",
+        "owner": "B3ella",
+        "repo": "marmota",
+        "rev": "b9687b0ba0df4deb302167485c4c4d57c65c83da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "B3ella",
+        "repo": "marmota",
         "type": "github"
       }
     },
@@ -191,11 +191,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1793152231,
-        "narHash": "sha256-hH7rK3yF7lMdrJYqF9cZbGheq8qNPgCYJDsfJovh7UY=",
+        "lastModified": 1794941510,
+        "narHash": "sha256-iZtLZ2bh2F1dvxiYYQNhXZTy7c2Lw9DpkD+Laq/pcog=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "0ae8788d14334c9dd4bcd68d951bee661b00ad87",
+        "rev": "f6a21f9c22e9ddf9cf88f9faf31d82985058ba14",
         "type": "github"
       },
       "original": {
@@ -206,8 +206,8 @@
     },
     "root": {
       "inputs": {
-        "groundhog": "groundhog",
         "home-manager": "home-manager",
+        "marmota": "marmota",
         "nix-colors": "nix-colors",
         "nixpkgs": "nixpkgs_2",
         "nvf": "nvf"
