@@ -32,6 +32,9 @@
         "dell-macna" = {
           id = "E32X3BD-CEVBMHJ-HGBVMZQ-S5BWIVT-6IWJ5QZ-EVIOLUO-5KG6GEM-FTJ7YAT";
         };
+        "polverari" = {
+          id = "HGO5KSA-2NGTL3D-DW33TIH-RDJSVUL-2QXR2ZH-7HHCZT3-WFIUQTS-KOUXMQ4";
+        };
       };
       folders = {
         "telepatia" = {
@@ -52,7 +55,7 @@
         };
         "Books" = {
           path = "/home/bella/Media/books";
-          devices = ["celular" "Desktop" "Notebook"];
+          devices = ["celular" "Desktop" "Notebook" "polverari"];
         };
         "Video" = {
           path = "/home/bella/Media/Video";
