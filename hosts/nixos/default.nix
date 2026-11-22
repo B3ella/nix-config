@@ -85,6 +85,8 @@
     librewolf
     acpi
     nchat
+    obsidian
+    anki
   ];
   services.blueman.enable = true;
 
