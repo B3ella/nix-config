@@ -53,8 +53,12 @@
           path = "/home/bella/Photos";
           devices = ["celular" "Desktop" "Notebook"];
         };
-        "Books" = {
+        "Booksold" = {
           path = "/home/bella/Media/books";
+          devices = ["celular" "Desktop" "Notebook" "polverari"];
+        };
+        "Books" = {
+          path = "/home/bella/Media/books_polve";
           devices = ["celular" "Desktop" "Notebook" "polverari"];
         };
         "Video" = {
