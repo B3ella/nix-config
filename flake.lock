@@ -77,11 +77,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1795285300,
-        "narHash": "sha256-gxIY6RgnD9Soncvc/kgBXwNShIs3oscK++UO6la0pF0=",
+        "lastModified": 1795569384,
+        "narHash": "sha256-7hrJN1xPypAGQqKEi1yC8TR9J9zK05AWIdWZPLm14A0=",
         "owner": "B3ella",
         "repo": "marmota",
-        "rev": "b9687b0ba0df4deb302167485c4c4d57c65c83da",
+        "rev": "8b92acd5fa3e3d5e1693f9f413d4ad32805e263d",
         "type": "github"
       },
       "original": {
